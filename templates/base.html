@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}title{% endblock %}</title>
+</head>
+
+<body>
+    {% block header %}outline{% endblock %}
+    {% block content %}content{% endblock %}
+    {% block footer %}
+        <a href="{{ url_for('top') }}">TOP PAGE</a>
+    {% endblock %}
+</body>
+
+</html>
